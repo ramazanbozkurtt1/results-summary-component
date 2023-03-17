@@ -1,0 +1,131 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    font-size: 18px;
+    background-color:var(--Pale-blue);
+}
+section{
+    border-radius: 1.8rem;
+    background-color: var(--White);
+    display: flex;
+    width: 700px;
+}
+.right{
+    border-radius: 1.8rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding: 2rem 3rem;
+    min-width: 350px;
+    width: 350px;
+    text-align: center;
+}
+.right h1{
+    color: var(--White);
+    margin-bottom: 1.5rem;
+}
+.gray{
+    color: var(--Light-lavender);
+}
+.dark{
+    color: var(--Dark-gray-blue);
+}
+.circle{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.circle  p:first-child{
+    font-size: 4rem;
+    color: var(--White);
+}
+.left{
+    min-width: 350px;
+    padding: 2rem;
+    width: 50%;
+}
+.left h2{
+    margin-bottom: 1.5rem;
+}
+.gray-text{
+    margin-left: 0.2rem;
+    color: rgb(140, 136, 136);
+}
+ul li{
+    list-style-type: none;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+ul li p{
+    margin-right: 0.7rem;
+}
+ul li h3{
+    margin-left: 0.7rem;
+}
+li:first-child {
+    color: var(--Light-red);
+    background-color: hsla(0, 100%, 67%, 0.08);
+}
+li:nth-child(2){
+    color: var(--Orangey-yellow);
+    background-color: hsla(39, 100%, 56%, 0.08);
+}
+li:nth-child(3){
+    color: var(--Green-teal);
+    background-color: hsla(166, 100%, 37%, 0.08);
+}
+li:last-child{
+    color: var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.08);
+}
+li svg{
+    padding-top: 0.3rem;
+}
+button{
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 6rem;
+    font-size: 1.2rem;
+    color: var(--White);
+    background-color: hsl(241, 81%, 54%);
+}
+button:hover{
+    opacity: 0.8;
+}
+@media (max-width: 700px) {
+    section{
+        flex-direction: column;
+        max-width: 350px;
+    }
+    body{
+        font-size: 16px;
+        height: 100%;
+    }
+}
